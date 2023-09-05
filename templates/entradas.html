@@ -1,15 +1,4 @@
-<!-- {% extends "layout.html"%}
-{% block corpo %}
-    <div>
-        {% for entrada in entradas %}
-        <h2>{{ entrada.titulo }}</h2>
-        <p>{{ entrada.texto }}</p>
-        {% else %}
-        <p>nao há publicações</p>
-        {% endfor %}
-    </div>
-{% endblock %} -->
-
+{% extends "layout.html"%}
 {% block content %}
   {% if session.logado %}
     <form action="" method="post" class="ins-entrada">
